@@ -25,10 +25,3 @@ jobs:
 
       - name: Build app
         run: npm run build
-
-      - name: Deploy to GitHub Pages (Optional)
-        uses: actions/deploy-pages@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: build
